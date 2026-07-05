@@ -42,12 +42,12 @@ This project demonstrates practical skills in network analysis, Linux security t
 - Evaluated data exposure and network behavior
   
 **Key Learnings**
-Network packet structure and communication flow
-PCAP file analysis using Wireshark
-Linux command-line operations for security tasks
-Basics of secure system design principles
-Importance of encryption and secure data handling
-Practical exposure to cybersecurity monitoring techniques
+- Network packet structure and communication flow
+- PCAP file analysis using Wireshark
+- Linux command-line operations for security tasks
+- Basics of secure system design principles
+- Importance of encryption and secure data handling
+- Practical exposure to cybersecurity monitoring techniques
 
 ## Evidence
 Screenshots and packet captures are included in the evidence folder.
