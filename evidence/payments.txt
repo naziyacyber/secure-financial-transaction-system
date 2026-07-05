@@ -1,0 +1,3 @@
+8ee17e43-e45c-4e7d-b2ba-02215ffc3a2f|alice|bob|10.0|CAD|coffee|recorded|1783218413
+3208262a-3088-4613-8f84-94ce2b89007a|alice|rich|50000.0|CAD|big transfer|pending|1783219109
+dc0b1891-2c74-4b7a-b828-a235a68746af|alice|rich|50000.0|CAD|big transfer|approved|1783219315

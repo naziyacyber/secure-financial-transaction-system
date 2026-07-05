@@ -1,0 +1,42 @@
+<!doctype html>
+
+<html>
+
+<head><meta charset="utf-8"><title>Demo Payment</title></head>
+
+<body>
+
+<h2>Demo Payment Form</h2>
+
+<form id="frm">
+
+Payer: <input id="payer" value="alice"><br> Payee: <input id="payee" value="bob"><br> Amount: <input id="amount" value="10"><br> Currency: <input id="currency" value="USD"><br> Description: <input id="desc" value="coffee"><br>
+<button type="button" onclick="create()">Create</button>
+
+</form>
+
+<pre id="out"></pre>
+
+<script>
+ 
+async function create(){
+
+const token = prompt("Paste your Bearer token (login first)"); const body = {
+payer: document.getElementById("payer").value, payee: document.getElementById("payee").value, amount: document.getElementById("amount").value, currency: document.getElementById("currency").value, description: document.getElementById("desc").value
+};
+
+const r = await fetch("/api/payments", { method:"POST",
+headers: { "Content-Type":"application/json", "Authorization": "Bearer "+token }, body: JSON.stringify(body)
+});
+
+const t = await r.json();
+
+document.getElementById("out").textContent = JSON.stringify(t, null, 2);
+
+}
+
+</script>
+
+</body>
+
+</html> EOF

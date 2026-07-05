@@ -1,0 +1,8 @@
+559d6a7b-2160-46c7-bcac-811bec643fce|user.register|user=alice|alice|1783218381
+b6b28078-694e-45a5-a0f7-c2a9502b38c5|user.login|user=alice ip=127.0.0.1|alice|1783218396
+7d019181-7141-438f-a919-72687234328b|payment.create|id=8ee17e43-e45c-4e7d-b2ba-02215ffc3a2f payer=alice payee=bob amount=10.0|d72c8043-3cee-4160-9ee6-305c884696da|1783218413
+52ff7cc6-6dc4-486f-a29f-5bfbbb2fe57b|waf.block|pattern=or\s+1=1 src=127.0.0.1 path=/api/payments|system|1783218513
+0934d2ab-3507-47a4-910a-eadbfdc21693|user.login|user=alice ip=127.0.0.1|alice|1783218935
+1300b445-ab67-4e43-b932-8f07eda516f1|transaction.pending|id=3208262a-3088-4613-8f84-94ce2b89007a payer=alice amount=50000.0|d72c8043-3cee-4160-9ee6-305c884696da|1783219109
+28c534e3-1c1e-4312-ab53-671ce3c9bc41|transaction.pending|id=dc0b1891-2c74-4b7a-b828-a235a68746af payer=alice amount=50000.0|d72c8043-3cee-4160-9ee6-305c884696da|1783219315
+42c47528-23b3-4b7e-ac7f-1ec9a99f1265|transaction.approved|payment_id=dc0b1891-2c74-4b7a-b828-a235a68746af|d72c8043-3cee-4160-9ee6-305c884696da|1783219399
